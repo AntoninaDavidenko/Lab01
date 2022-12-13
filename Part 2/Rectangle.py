@@ -1,32 +1,32 @@
 class Rectangle:
 
     def __init__(self):
-        self.width = 1
-        self.length = 1
+        self.__width = 1
+        self.__length = 1
 
     def set_length(self, length):
         if 0.0 < length < 20.0:
-            self.length = length
+            self.__length = length
         else:
             print("Incorrect number")
 
     def set_width(self, width):
         if 0.0 < width < 20.0:
-            self.width = width
+            self.__width = width
         else:
             print("Incorrect number")
 
     def get_length(self):
-        return self.length
+        return self.__length
 
     def get_width(self):
-        return self.width
+        return self.__width
 
     def perimeter(self):
-        print(self.width + self.width + self.length + self.length)
+        print(self.__width + self.__width + self.__length + self.__length)
 
     def square(self):
-        print(self.width * self.length)
+        print(self.__width * self.__length)
 
 
 pr = Rectangle()
